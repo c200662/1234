@@ -22,7 +22,7 @@
   try{
     $sql = "SELECT * FROM user WHERE id = :id";
     $stmt = $dbh->prepare($sql);
-    /* (1)ここに適切なバインド処理を追加して下さい  */
+    $stmt->bindValue(':id', $edit, PDO::PARAM_INT);
 
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -55,7 +55,7 @@
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="form-group">
                     <label for="name"><span class="required">お名前</span> </label>
-                    /* (2)ここに「名前」欄の初期表示処理を追加して下さい  */
+                    
 
                 </div>
                 <div class="form-group">
