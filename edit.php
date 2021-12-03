@@ -60,7 +60,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email"><span class="required">メールアドレス</span> </label>
-                    <input type="text" id="name" name="email" class="form-control" value="<? php echo $row['email']; ?>">
+                    <input type="text" id="email" name="email" class="form-control" value="<? php echo $row['email']; ?>">
 
                 </div>
                 <div class="form-group">
