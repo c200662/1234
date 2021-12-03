@@ -76,7 +76,7 @@ try{
         ?>
     </td>
     <td>
-        <input type="radio" name="edit" value="<?php echo $row['id'] ?>">
+        <input type="radio" name="edit" value="<?php echo $row['id']; ?>">
 
     </td>
     </tr>
